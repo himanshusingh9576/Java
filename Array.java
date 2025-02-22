@@ -103,21 +103,45 @@ public class Array {
     // }
 
     //Q3. calculate the average marks from an array containing marks of all student in physics using for-each loop
-    int [] marks = {99,92,83,79,95};
-    int sum = 0;
-    for(int element:marks) {
-        sum = sum + element;
+    // int [] marks = {99,92,83,79,95};
+    // int sum = 0;
+    // for(int element:marks) {
+    //     sum = sum + element;
 
-    }
-    System.out.println("The value of average marks is " + sum/marks.length);
+    // }
+    // System.out.println("The value of average marks is " + sum/marks.length);
 
     // Q4  Create a java program to add two matrices of size 2 * 3.
-    int [][] mat1 = { {1,2,3},},
+    int [][] mat1 = { {1, 2, 3},
+                      {4, 5, 6}};
+    int [][] mat2 = { {2, 6, 13},
+                      {3, 7, 12}};
+    int [][] result = { {0, 0, 0},
+                      {0, 0, 0}}; 
+                
+    
+    for(int i=0; i<mat1.length;i++){
+        for(int j=0; j<mat1[i].length; j++) {
+            System.out.format(" Setting value for i=%d and j=%d\n", i, j);
+            result[i][j] = mat1[i][j] + mat2[i][j];
+        }
+    }
+
+    //Printing the element of 2-D array
+    for(int i=0;i<mat1.length;i++) {
+        for(int j=0; j<mat1[i].length; j++){
+            System.out.print(result[i][j] + " ");
+            result[i][j]= mat1[i][j] + mat2[i][j];
+        }
+        System.out.println("");
+    }
+
+
+
+    
    
     }
 }
-himanshu kumar singh rolll no 422
-himanshu kumar singh
 
 
         
