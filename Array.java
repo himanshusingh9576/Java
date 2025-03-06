@@ -112,7 +112,7 @@ public class Array {
     // System.out.println("The value of average marks is " + sum/marks.length);
 
     // Q4  Create a java program to add two matrices of size 2 * 3.
-    int [][] mat1 = { {1, 2, 3},
+    /*int [][] mat1 = { {1, 2, 3},
                       {4, 5, 6}};
     int [][] mat2 = { {2, 6, 13},
                       {3, 7, 12}};
@@ -133,11 +133,30 @@ public class Array {
             System.out.print(result[i][j] + " ");
             result[i][j]= mat1[i][j] + mat2[i][j];
         }
-        System.out.println("");
-    }
+        System.out.println("");// this line print new line
+    }*/
 
+   // Q5 Wite a java program to reverse an array
+   int [] arr = {1,2,3,4,5,6};
+   int l = arr.length;
+   int n = Math.floorDiv(arr.length, 2);
+   int temp;
 
+   for(int i=0; i<n; i++){
+    //swap a[i] ans a[l-1-i]
+    temp = arr[i];
+    arr[i] = arr[l-i-1];
+    arr[l-i-1] = temp;
+   }
+   for(int element: arr){
+    System.out.println(element + "  ");
+   }
+   
 
+    
+ 
+
+ 
     
    
     }
