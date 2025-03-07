@@ -137,20 +137,53 @@ public class Array {
     }*/
 
    // Q5 Wite a java program to reverse an array
-   int [] arr = {1,2,3,4,5,6};
-   int l = arr.length;
-   int n = Math.floorDiv(arr.length, 2);
-   int temp;
+//    int [] arr = {1,2,3,4,5,6};
+//    int l = arr.length;
+//    int n = Math.floorDiv(arr.length, 2);
+//    int temp;
 
-   for(int i=0; i<n; i++){
-    //swap a[i] ans a[l-1-i]
-    temp = arr[i];
-    arr[i] = arr[l-i-1];
-    arr[l-i-1] = temp;
-   }
-   for(int element: arr){
-    System.out.println(element + "  ");
-   }
+//    for(int i=0; i<=n; i++){
+//     //swap a[i] ans a[l-1-i]
+//     temp = arr[i];
+//     arr[i] = arr[l-i-1];
+//     arr[l-i-1] = temp;
+//    }
+//    for(int element: arr){
+//     System.out.println(element + "  ");
+//    }  
+// Q6 Write a java program to find the maximum element of an array.
+//    int [] arr = {1,2,3,-455,5,6};
+//    int max = 0;
+//    for(int e: arr) {
+    
+//         if(e>max){
+//             max=e;
+//             }
+        
+//     }
+//     System.out.println("the value of the maimum element in this array is: "  + max);
+//     System.out.println(Integer.MIN_VALUE);
+//     System.out.println(Integer.MAX_VALUE);
+
+    //Q7  Write a java program to find whether an array is sorted or not
+    boolean isSorted = true;
+    int [] arr = {1,20,3,435,6,33,67};
+    for(int i=0;i<arr.length-1;i++) {
+        if(arr[i] > arr[i+1]) {
+            isSorted = false;
+            break;
+        }
+    }
+    if(isSorted) {
+        System.out.println("The array is sorted");
+    }else {
+        System.out.println("The Array is not sorted");
+    }
+    
+    
+    
+     
+
    
 
     
