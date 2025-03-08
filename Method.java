@@ -1,13 +1,14 @@
 import java.util.Scanner;
 
 public class Method {
-    static int logic(int x, int y){     //static method
+    static int logic(int x, int y){    //static method
+       
         int z;
         if(x>y){
             z = x+y;
         }else {
             z = (x + y) * 5;
-        }
+        } 
         return z;
         
     }
@@ -15,6 +16,9 @@ public class Method {
         int a = 5;
         int b = 7;
         int c;
+        //Method invocation using object creation
+        // Method obj = new Method(); if static method is not 
+        // c = obj.logic(a,b);
         c = logic(a,b);
         System.out.println(c);
         // if(a>b) {
